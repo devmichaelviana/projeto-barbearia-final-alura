@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Contato - Barbearia Alura</title>
-		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="author" content="Michael Viana" />
+		<meta name="description" content="Pagina de contato da barbearia">
+      	<meta name="keywords" content="barbearia, produtos, contato, cabelo, barba">
+		<title>Contato - Barbearia</title>
+		<link rel="stylesheet" href="../css/contato.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
+
 	<body>
-		
+		<header>
+			<div class="center">
+				<div class="img-logo">
+					<img src="../imagens/logo.png"/>
+				</div><!--img-logo-->
+				<nav>
+					<ul>
+						<li><a href="../html/home.html">Home</a></li>
+						<li><a href="../html/produtos.html">Produtos</a></li>
+						<li><a href="../html/contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div><!--center-->
+			<div class="clear"></div><!--clear-->
+		</header>
+
+		<main>
+			<div class="center">
+				<h3>Nome e sobrenome</h3>
+				<input type="text" name="full-name"/>
+				<h3>E-mail</h3>
+				<input type="text" name="email"/>
+				<h3>Telefone</h3>
+				<input type="text" name="telephone"/>
+				<h3>Mensagem</h3>
+				<textarea></textarea>
+				<fieldset class="fieldset-1">
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="option-email">
+						<input type="radio" name="contato" value="email" class="option-email"/>
+					Email</label>
+					<label for="option-phone">
+						<input type="radio" name="contato" value="phone" class="option-phone"/>
+					Telefone</label>
+					<label for="option-wpp">
+						<input type="radio" name="contato" value="wpp" class="option-wpp"/>
+					WhatsApp</label>
+				</fieldset><!--fieldset-1-->
+				<fieldset class="fieldset-2">
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset><!--fieldset-2-->
+				<fieldset class="fieldset-3">
+					<label class="subscribe-email" for="subscribe-email">
+						<input type="checkbox" name="contato" value="subscribe-email" class="inner-subscribe-email"/>
+					Gostaria de receber nossas novidades por e-mail?</label>
+					<input type="text" value="Enviar formulário" class="send-form"/>
+				</fieldset>
+			</div><!--center-->
+		</main>
+
+		<footer>
+			<div class="center">
+				<img src="../imagens/logo-branco.png" />
+				<p>&copy; Copyright Barbearia Alura - 2022</p>
+			</div><!--center-->
+		</footer>
 	</body>
 </html>
