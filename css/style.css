@@ -1,0 +1,234 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.clear{
+	clear: both;
+}
+
+header{
+	padding: 20px 1%;
+	background-color: #c0c0c0;
+}
+
+header .center{
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;	
+}
+
+.img-logo{
+	float: left;
+}
+
+nav{
+	float: right;
+	margin-top: 100px;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li{
+	float: left;
+	font-size: 23px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav a{
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #c78c19;
+	text-decoration: underline;
+}
+
+main .banner{
+	width: 100%;
+	background-image: url('../imagens/banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 700px;
+}
+
+.gradient-effect{
+	background-image: linear-gradient(to bottom, #fff, #c0c0c0);
+	padding: 50px 1%;
+}
+
+.gradient-effect .center{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;	
+}
+
+.about-barber-shop{
+	width: 100%;
+	text-align: center;
+}
+
+.about-barber-shop h1{
+	font-size: 30px;
+}
+
+.about-barber-shop img, .about-barber-shop p{
+	margin-top: 20px;
+}
+
+.about-barber-shop img{
+	width: 20%;
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+
+.barber-shop-text p{
+	text-align: justify;
+}
+
+.our-place{
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.our-place h1{
+	font-size: 30px;
+}
+
+.our-place p{
+	margin: 20px 0;
+}
+
+.our-place iframe{
+	width: 100%;
+}
+
+.our-services{
+	background-color: #c0c0c0;
+	padding: 0 1% 20px 1%;
+}
+
+.our-services .center{
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.our-services .center h1{
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+.services{
+	width: 100%;
+}
+
+.services ul{
+	width: 40%;
+	float: left;
+	margin-left: 4%;
+}
+
+.services li{
+	text-align: justify;
+	margin: 5px 0;
+	list-style-type: none;
+}
+
+.services img{
+	width: 50%;
+	float: right;
+	margin-right: 4%;
+}
+
+.our-services .center iframe{
+	margin: 50px 0;
+	width: 100%;
+}
+
+footer{
+	background-image: url('../imagens/bg.jpg');
+	padding: 40px 1%;
+}
+
+footer .center{
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer p{
+	color: white;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px){
+	nav{
+		margin-top: 60px;
+	}
+	
+	nav li{
+		float: none;
+		padding: 5px 0;
+	}
+
+	main .banner{
+		height: 300px;
+	}
+
+	.about-barber-shop{
+		text-align: center;
+	}
+
+	.about-barber-shop img{
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.about-barber-shop p{
+		margin-top: 20px;
+		float: none;
+		display: block;
+	}
+
+	.services ul{
+		width: 100%;
+		float: none;
+		display: block;
+		position: relative;
+		left: 25%;
+		margin-bottom: 40px;
+	}
+	
+	.services li{
+		text-align: justify;
+		margin: 5px 0;
+		display: block;
+	}
+	
+	.services img{
+		width: 100%;
+		float: none;
+		margin-right: 0;
+	}
+}
+
